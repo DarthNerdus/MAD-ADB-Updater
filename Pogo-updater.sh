@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Delete old APK"
-rm -f pogo.apk
-echo "Download new APK"
-curl -L -o pogo.apk -k -s "$(curl -k -s 'https://m.apkpure.com/pokemon-go/com.nianticlabs.pokemongo/download' | grep 'click here'|awk -F'"' '{print $12}')"
+#echo "Delete old APK"
+#rm -f pogo.apk
+#echo "Download new APK"
+#curl -L -o pogo.apk -k -s "$(curl -k -s 'https://m.apkpure.com/pokemon-go/com.nianticlabs.pokemongo/download' | grep 'click here'|awk -F'"' '{print $12}')"
 
 FILE=pogo.apk
 if test -f "$FILE"; then
